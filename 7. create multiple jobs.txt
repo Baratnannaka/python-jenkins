@@ -1,0 +1,11 @@
+import jenkins
+
+j=jenkins.Jenkins("http://localhost:8080","uday","uday")
+
+i=1
+
+while i<=10
+
+      j.create_job("job%d"%i,jenkins.EMPTY_CONFIG_XML)
+
+      i=i+1

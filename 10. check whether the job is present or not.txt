@@ -1,0 +1,6 @@
+import jenkins
+
+j=jenkins.Jenkins("http://localhost:8080","uday","uday")
+
+print(j.get_job_name("Development"))  //to check whether the job is present if present it will return the job name else it                                       will return none
+ 

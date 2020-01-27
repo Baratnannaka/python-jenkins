@@ -1,0 +1,11 @@
+import jenkins
+
+j=jenkins.Jenkins("http://localhost:8080","uday","uday")
+
+jobs= ["job1","job2"]
+
+for i in jobs:
+
+    j.build_job("%s"%i)   //job1 and job2 all are string type so i is also string type in build job %s and it is coming                            from i 
+
+

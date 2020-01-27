@@ -1,0 +1,7 @@
+import jenkins
+j=jenkins.Jenkins("http://localhost:8080","uday","uday") //Jenkins is a method which is used for connection  
+                                                           program and jenkins server 
+                                                          
+                                                         //j is a  object where we are storing the information of the                                                          connection
+
+print(j.get_jobs())    //get_jobs is a method used to get the list of jobs                                             

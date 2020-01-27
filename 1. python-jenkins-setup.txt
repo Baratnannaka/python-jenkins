@@ -1,0 +1,38 @@
+jenkis integration with python
+=================================
+
+1) install jenkins
+
+2) install python-pip
+     
+    sudo apt-get update
+    sudo apt-get install -y python-pip 
+
+3) install python-jenkis
+  
+   sudo pip install python-jenkins
+
+4)  connection to jenkins
+
+there is a inbuild menthod in jenkins called "Jenkins" using this method we can establish connection between python program and jenkins server..if the python program and jenkins is present in same machine we can use localhost option orelse we specify the IP address
+
+   jenkins.Jenkins("http://localhost:8080","username","password")
+
+         here username and password are of the jenkins 
+
+
+
+methods:
+----------------
+
+get_jobs()  //get the list of jobs
+
+create_job() //create the job
+
+build_job() //build job
+
+copy_job() //carbon copy of the job
+
+delete_job() //delete the job
+
+get_job_name(name of job) // to check whether the job is present or not

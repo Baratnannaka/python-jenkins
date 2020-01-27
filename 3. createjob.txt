@@ -1,0 +1,5 @@
+import jenkins
+
+j=jenkins.Jenkins("http://localhost:8080","uday","uday")
+
+j.create_job("nameofthejob",jenkins.EMPTY_CONFIG_XML)           //the development team will give all the configuration file                                                                called xml file(like sourcecode build deploy testing and                                                               production all these are populated by the developer if there is                                                           xml file specify the path orelse write empty config file)

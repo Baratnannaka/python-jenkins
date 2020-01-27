@@ -1,0 +1,5 @@
+import jenkins
+
+j=jenkins.Jenkins("http://localhost:8080","uday","uday")
+
+j.copy_job("Development","Testing")  //whatever the steps are there in Development job a carbon copy of the steps are saved                                         (copied) into the testing job (backup of job)

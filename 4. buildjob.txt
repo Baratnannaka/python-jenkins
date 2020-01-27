@@ -1,0 +1,5 @@
+import jenkins
+
+j=jenkins.Jenkins("http://localhost","uday","uday")
+
+j.build_job("name of the job")    
